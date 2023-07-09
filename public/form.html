@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=0" />
+    <title>코워커웹</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!-- 컬러피커 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/Survey_common.css">
+
+
+</head>
+
+<body>
+    <div id="wrap">
+
+        <main class="form">
+            <dir id="fullpage">
+                <div class="section">
+                    <div class="chapter chapter1 row-group">
+                        <div class="title-wrap">
+                            <h2 class="main-title">
+                                어떤 홈페이지가 필요하신가요?
+                            </h2>
+                        </div>
+                        <ul class="col-group check-list">
+                            <li>
+                                <label for="ch_1_1">
+                                    <input type="radio" id="ch_1_1" name="ch_1">
+                                    <div class="checked-box">
+                                        <div class="img-box"></div>
+                                        <p class="txt">
+                                            쇼핑몰
+                                        </p>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="ch_1_2">
+                                    <input type="radio" id="ch_1_2" name="ch_1">
+                                    <div class="checked-box">
+                                        <div class="img-box"></div>
+                                        <p class="txt">
+                                            플랫폼
+                                        </p>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="ch_1_3">
+                                    <input type="radio" id="ch_1_3" name="ch_1">
+                                    <div class="checked-box">
+                                        <div class="img-box"></div>
+                                        <p class="txt">
+                                            포트폴리오
+                                        </p>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="ch_1_4">
+                                    <input type="radio" id="ch_1_4" name="ch_1">
+                                    <div class="checked-box">
+                                        <div class="img-box"></div>
+                                        <p class="txt">
+                                            기타
+                                        </p>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+
+                        <div class="btn_wrap">
+                            <button class="next">다음</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="chapter chapter2 row-group">
+                        <div class="title-wrap">
+                            <h2 class="main-title">
+                                기존 홈페이지가 있으신가요?
+                            </h2>
+                        </div>
+                        <ul class="col-group check-list">
+                            <li>
+                                <label for="ch_2_1">
+                                    <input type="radio" id="ch_2_1" name="ch_2">
+                                    <div class="checked-box">
+                                        <p class="txt">
+                                            신규 홈페이지 제작
+                                        </p>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="ch_2_2">
+                                    <input type="radio" id="ch_2_2" name="ch_2">
+                                    <div class="checked-box">
+                                        <p class="txt">
+                                            홈페이지 리뉴얼
+                                        </p>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+
+                        <div class="btn_wrap">
+                            <button class="prev">이전</button>
+                            <button class="next">다음</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="chapter chapter3 row-group">
+                        <div class="main-check-list row-group">
+                            <div class="title-wrap">
+                                <h2 class="main-title">
+                                    결제기능이 필요하신가요?
+                                </h2>
+                            </div>
+                            <ul class="col-group check-list">
+                                <li>
+                                    <label for="ch_3_1_1">
+                                        <input type="radio" id="ch_3_1_1" name="ch_3_1">
+                                        <div class="checked-box">
+                                            <p class="txt">
+                                                네
+                                            </p>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="ch_3_1_2">
+                                        <input type="radio" id="ch_3_1_2" name="ch_3_1">
+                                        <div class="checked-box">
+                                            <p class="txt">
+                                                아니요
+                                            </p>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <ul class="sub-check-list row-group">
+                            <li class="row-group">
+                                <div class="title-wrap row-group">
+                                    <h2 class="sub-title">
+                                        필요하신 일반결제를 체크해주세요.
+                                    </h2>
+                                    <p class="sub-txt">
+                                        다양한 일반결제 서비스가 필요하실 경우, pg사 선택에 제한적이거나 수수료가 추가로 발생할 수 있습니다.
+                                    </p>
+                                </div>
+                                <ul class="col-group check-list">
+                                    <li>
+                                        <label for="ch_3_2_1">
+                                            <input type="checkbox" id="ch_3_2_1" name="ch_3_2">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    신용카드
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_3_2_2">
+                                            <input type="checkbox" id="ch_3_2_2" name="ch_3_2">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    계좌이체
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_3_2_3">
+                                            <input type="checkbox" id="ch_3_2_3" name="ch_3_2">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    가상계좌
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_3_2_4">
+                                            <input type="checkbox" id="ch_3_2_4" name="ch_3_2">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    휴대폰
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_3_2_5">
+                                            <input type="checkbox" id="ch_3_2_5" name="ch_3_2">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    건너뛰기
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="row-group">
+                                <div class="title-wrap row-group">
+                                    <h2 class="sub-title">
+                                        필요하신 간편결제를 체크해주세요.
+                                    </h2>
+                                    <p class="sub-txt">
+                                        다양한 간편결제 서비스가 필요하실 경우,  수수료가 추가로 발생할 수 있습니다.
+                                    </p>
+                                </div>
+                                <ul class="col-group check-list">
+                                    <li>
+                                        <label for="ch_3_3_1">
+                                            <input type="checkbox" id="ch_3_3_1" name="ch_3_3">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    네이버페이
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_3_3_2">
+                                            <input type="checkbox" id="ch_3_3_2" name="ch_3_3">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    카카오페이
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_3_3_3">
+                                            <input type="checkbox" id="ch_3_3_3" name="ch_3_3">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    페이코
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_3_3_4">
+                                            <input type="checkbox" id="ch_3_3_4" name="ch_3_3">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    토스
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_3_3_5">
+                                            <input type="checkbox" id="ch_3_3_5" name="ch_3_3">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    건너뛰기
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="row-group">
+                                <div class="title-wrap">
+                                    <h2 class="sub-title">
+                                        마일리지나 포인트를 이용하시나요?
+                                    </h2>
+                                </div>
+                                <ul class="col-group check-list">
+                                    <li>
+                                        <label for="ch_3_5_1">
+                                            <input type="radio" id="ch_3_5_1" name="ch_3_5">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    네
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_3_5_2">
+                                            <input type="radio" id="ch_3_5_2" name="ch_3_5">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    아니요
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="btn_wrap">
+                            <button class="prev">이전</button>
+                            <button class="next">다음</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="chapter chapter3 row-group">
+                        <div class="main-check-list row-group">
+                            <div class="title-wrap">
+                                <h2 class="main-title">
+                                    판매 상품이 배송이 되나요?
+                                </h2>
+                            </div>
+                            <ul class="col-group check-list">
+                                <li>
+                                    <label for="ch_3_1_1">
+                                        <input type="radio" id="ch_3_1_1" name="ch_3_1">
+                                        <div class="checked-box">
+                                            <p class="txt">
+                                                네
+                                            </p>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="ch_3_1_2">
+                                        <input type="radio" id="ch_3_1_2" name="ch_3_1">
+                                        <div class="checked-box">
+                                            <p class="txt">
+                                                아니요
+                                            </p>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <ul class="sub-check-list row-group">
+                            <li class="row-group">
+                                <div class="title-wrap">
+                                    <h2 class="sub-title">
+                                        귀사에서 직접 배송하시나요? 배송업체를 이용하시나요?
+                                    </h2>
+                                </div>
+                                <ul class="col-group check-list">
+                                    <li>
+                                        <label for="ch_3_4_a_1">
+                                            <input type="radio" id="ch_3_4_a_1" name="ch_3_4_a">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    직접
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_3_4_a_2">
+                                            <input type="radio" id="ch_3_4_a_2" name="ch_3_4_a">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    배송업체
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="btn_wrap">
+                            <button class="prev">이전</button>
+                            <button class="next">다음</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="chapter chapter4 row-group">
+                        <div class="main-check-list row-group">
+                            <div class="title-wrap">
+                                <h2 class="main-title">
+                                    회원가입이 필요하신가요?
+                                </h2>
+                            </div>
+                            <ul class="col-group check-list">
+                                <li>
+                                    <label for="ch_4_1_1">
+                                        <input type="radio" id="ch_4_1_1" name="ch_4_1">
+                                        <div class="checked-box">
+                                            <p class="txt">
+                                                네
+                                            </p>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="ch_4_1_2">
+                                        <input type="radio" id="ch_4_1_2" name="ch_4_1">
+                                        <div class="checked-box">
+                                            <p class="txt">
+                                                아니요
+                                            </p>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <ul class="sub-check-list row-group">
+                            <li class="row-group">
+                                <div class="title-wrap">
+                                    <h2 class="sub-title">
+                                        소셜로그인(sns 간편로그인)이 있나요?
+                                    </h2>
+                                </div>
+                                <ul class="col-group check-list">
+                                    <li>
+                                        <label for="ch_4_2_1">
+                                            <input type="radio" id="ch_4_2_1" name="ch_4_2">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    네
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_4_2_2">
+                                            <input type="radio" id="ch_4_2_2" name="ch_4_2">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    아니요
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="row-group">
+                                <div class="title-wrap">
+                                    <h2 class="sub-title">
+                                        어플을 제작하시나요?
+                                    </h2>
+                                </div>
+                                <ul class="col-group check-list">
+                                    <li>
+                                        <label for="ch_4_3_1">
+                                            <input type="radio" id="ch_4_3_1" name="ch_4_3">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    네
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_4_3_2">
+                                            <input type="radio" id="ch_4_3_2" name="ch_4_3">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    아니요
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                        <div class="btn_wrap">
+                            <button class="prev">이전</button>
+                            <button class="next">다음</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="chapter chapter5 row-group">
+                        <div class="main-check-list row-group">
+                            <div class="title-wrap">
+                                <h2 class="main-title">
+                                    알림, 카카오채널, SMS안내가 필요하신가요?
+                                </h2>
+                            </div>
+                            <ul class="col-group check-list">
+                                <li>
+                                    <label for="ch_5_1">
+                                        <input type="checkbox" id="ch_5_1" name="ch_5">
+                                        <div class="checked-box">
+                                            <p class="txt">
+                                                E-MAIL
+                                            </p>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="ch_5_2">
+                                        <input type="checkbox" id="ch_5_2" name="ch_5">
+                                        <div class="checked-box">
+                                            <p class="txt">
+                                                SMS
+                                            </p>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="ch_5_3">
+                                        <input type="checkbox" id="ch_5_3" name="ch_5">
+                                        <div class="checked-box">
+                                            <p class="txt">
+                                                카카오
+                                            </p>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="ch_5_4">
+                                        <input type="checkbox" id="ch_5_4" name="ch_5">
+                                        <div class="checked-box">
+                                            <p class="txt">
+                                                기타
+                                            </p>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="ch_5_5">
+                                        <input type="checkbox" id="ch_5_5" name="ch_5">
+                                        <div class="checked-box">
+                                            <p class="txt">
+                                                없음
+                                            </p>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+
+                            <div class="btn_wrap">
+                                <button class="prev">이전</button>
+                                <button class="next">다음</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="chapter chapter6 row-group">
+                        <div class="main-check-list row-group">
+                            <div class="title-wrap">
+                                <h2 class="main-title">
+                                    추가적으로 필요한 홈페이지 기능이 있으신가요?
+                                </h2>
+                            </div>
+                            <ul class="col-group check-list">
+                                <li>
+                                    <label for="ch_6_1_1">
+                                        <input type="radio" id="ch_6_1_1" name="ch_6_1">
+                                        <div class="checked-box">
+                                            <p class="txt">
+                                                네
+                                            </p>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="ch_6_1_2">
+                                        <input type="radio" id="ch_6_1_2" name="ch_6_1">
+                                        <div class="checked-box">
+                                            <p class="txt">
+                                                아니요
+                                            </p>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <ul class="sub-check-list row-group">
+                            <li class="row-group">
+                                <div class="title-wrap">
+                                    <h2 class="sub-title">
+                                        추가적으로 필요한 기능이 이 중에 있을까요?
+                                    </h2>
+                                </div>
+                                <ul class="col-group check-list">
+                                    <li>
+                                        <label for="ch_6_2_1">
+                                            <input type="checkbox" id="ch_6_2_1" name="ch_6_2">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    게시판
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_6_2_2">
+                                            <input type="checkbox" id="ch_6_2_2" name="ch_6_2">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    쿠폰
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_6_2_3">
+                                            <input type="checkbox" id="ch_6_2_3" name="ch_6_2">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    후기
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_6_2_4">
+                                            <input type="checkbox" id="ch_6_2_4" name="ch_6_2">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    채팅
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_6_2_5">
+                                            <input type="checkbox" id="ch_6_2_5" name="ch_6_2">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    통계
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_6_2_6">
+                                            <input type="checkbox" id="ch_6_2_6" name="ch_6_2">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    번역
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_6_2_7">
+                                            <input type="checkbox" id="ch_6_2_7" name="ch_6_2">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    예약
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_6_2_8">
+                                            <input type="checkbox" id="ch_6_2_8" name="ch_6_2">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    유튜브
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_6_2_9">
+                                            <input type="checkbox" id="ch_6_2_9" name="ch_6_2">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    지도
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="row-group">
+                                <div class="title-wrap">
+                                    <h2 class="sub-title">
+                                        기타 필요하신 기능이 있으시면 적어주세요
+                                    </h2>
+                                </div>
+                                <div class="input-txt-box col-group">
+                                    <input type="text">
+                                    <!-- <button class="btn">
+                                        다음
+                                    </button> -->
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="btn_wrap">
+                            <button class="prev">이전</button>
+                            <button class="next">다음</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="chapter chapter7 row-group">
+                        <div class="main-check-list row-group">
+                            <div class="title-wrap">
+                                <h2 class="main-title">
+                                    주 고객층
+                                </h2>
+                            </div>
+                        </div>
+
+                        <ul class="sub-check-list row-group">
+                            <li class="row-group">
+                                <div class="title-wrap">
+                                    <h2 class="sub-title">
+                                        성별
+                                    </h2>
+                                </div>
+                                <ul class="col-group check-list">
+                                    <li>
+                                        <label for="ch_7_1_1">
+                                            <input type="checkbox" id="ch_7_1_1" name="ch_7_1">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    남자
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_7_1_2">
+                                            <input type="checkbox" id="ch_7_1_2" name="ch_7_1">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    여자
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_7_1_3">
+                                            <input type="checkbox" id="ch_7_1_3" name="ch_7_1">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    상관없음
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="row-group">
+                                <div class="title-wrap">
+                                    <h2 class="sub-title">
+                                        연령
+                                    </h2>
+                                </div>
+                                <ul class="col-group check-list">
+                                    <li>
+                                        <label for="ch_7_2_1">
+                                            <input type="checkbox" id="ch_7_2_1" name="ch_7_2">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    10대 이하
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_7_2_2">
+                                            <input type="checkbox" id="ch_7_2_2" name="ch_7_2">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    10대
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_7_2_3">
+                                            <input type="checkbox" id="ch_7_2_3" name="ch_7_2">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    20~30대
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_7_2_4">
+                                            <input type="checkbox" id="ch_7_2_4" name="ch_7_2">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    40~50대
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_7_2_5">
+                                            <input type="checkbox" id="ch_7_2_5" name="ch_7_2">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    50대 이상
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_7_2_6">
+                                            <input type="checkbox" id="ch_7_2_6" name="ch_7_2">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    상관없음
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="row-group">
+                                <div class="title-wrap">
+                                    <h2 class="sub-title">
+                                        기타
+                                    </h2>
+                                </div>
+                                <div class="input-txt-box col-group">
+                                    <input type="text">
+                                    <!-- <button class="btn">
+                                        다음
+                                    </button> -->
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="btn_wrap">
+                            <button class="prev">이전</button>
+                            <button class="next">다음</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="chapter chapter8 row-group">
+                        <div class="main-check-list row-group">
+                            <div class="title-wrap">
+                                <h2 class="main-title">
+                                    회사 이미지
+                                </h2>
+                            </div>
+                        </div>
+
+                        <ul class="sub-check-list row-group">
+                            <li class="col-group">
+                                <div class="title-wrap">
+                                    <h2 class="sub-title">
+                                        1순위
+                                    </h2>
+                                </div>
+                                <ul class="col-group check-list">
+                                    <li>
+                                        <label for="ch_8_1_1">
+                                            <input type="checkbox" id="ch_8_1_1" name="ch_8_1">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    심플
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_8_1_2">
+                                            <input type="checkbox" id="ch_8_1_2" name="ch_8_1">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    클래식
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_8_1_3">
+                                            <input type="checkbox" id="ch_8_1_3" name="ch_8_1">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    트렌디
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_8_1_4">
+                                            <input type="checkbox" id="ch_8_1_4" name="ch_8_1">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    신뢰
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_8_1_5">
+                                            <input type="checkbox" id="ch_8_1_5" name="ch_8_1">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    첨단
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_8_1_6">
+                                            <input type="checkbox" id="ch_8_1_6" name="ch_8_1">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    캐주얼
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_8_1_7">
+                                            <input type="checkbox" id="ch_8_1_7" name="ch_8_1">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    화려
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_8_1_8">
+                                            <input type="checkbox" id="ch_8_1_8" name="ch_8_1">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    신비
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_8_1_9">
+                                            <input type="checkbox" id="ch_8_1_9" name="ch_8_1">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    모던
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_8_1_10">
+                                            <input type="checkbox" id="ch_8_1_10" name="ch_8_1">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    자연
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_8_1_11">
+                                            <input type="checkbox" id="ch_8_1_11" name="ch_8_1">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    한국
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_8_1_12">
+                                            <input type="checkbox" id="ch_8_1_12" name="ch_8_1">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    전문성
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_8_1_13">
+                                            <input type="checkbox" id="ch_8_1_13" name="ch_8_1">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    친화
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_8_1_14">
+                                            <input type="checkbox" id="ch_8_1_14" name="ch_8_1">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    귀여움
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_8_1_15">
+                                            <input type="checkbox" id="ch_8_1_15" name="ch_8_1">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    밝음
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="ch_8_1_16">
+                                            <input type="checkbox" id="ch_8_1_16" name="ch_8_1">
+                                            <div class="checked-box">
+                                                <p class="txt">
+                                                    어두움
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="btn_wrap">
+                            <button class="prev">이전</button>
+                            <button class="next">다음</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="chapter chapter9 row-group">
+                        <div class="main-check-list row-group">
+                            <div class="title-wrap">
+                                <h2 class="main-title">
+                                    선호 색상 (로고 컬러)
+                                </h2>
+                            </div>
+                        </div>
+
+                        <ul class="sub-check-list row-group">
+                            <li class="row-group">
+                                <div class="title-wrap col-group">
+                                    <h2 class="sub-title tab-link active" tab-data="tab_1">
+                                        로고 첨부
+                                    </h2>
+                                    <h2 class="sub-title tab-link" tab-data="tab_2">
+                                        컬러 선택
+                                    </h2>
+                                </div>
+
+                                <div class="tab-content active" id="tab_1">
+                                    <div class="file-upload-box col-group">
+                                        <input type="file" id="logo_file">
+                                        <button onclick="onClickUpload();" class="btn">첨부</button>
+                                        <span id="file_name"></span>
+                                    </div>
+                                </div>
+
+                                <div class="tab-content" id="tab_2">
+                                    <input type="text" data-coloris>
+                                </div>
+
+                            </li>
+                        </ul>
+
+                        <div class="btn_wrap">
+                            <button class="prev">이전</button>
+                            <button class="next">다음</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="chapter chapter10 row-group">
+                        <div class="main-check-list row-group">
+                            <div class="title-wrap row-group">
+                                <h2 class="main-title">
+                                    설문에 응해주셔서 감사합니다.
+                                </h2>
+                                <p class="sub-txt">
+                                    연락받으실 정보를 작성해주세요!
+                                </p>
+                            </div>
+                        </div>
+
+                        <ul class="input-txt-wrap row-group">
+                            <li class="col-group">
+                                <p class="txt">
+                                    회사명
+                                </p>
+                                <input type="text">
+                            </li>
+                            <li class="col-group">
+                                <p class="txt">
+                                    담당자 연락처
+                                </p>
+                                <input type="text">
+                            </li>
+                            <li class="col-group">
+                                <p class="txt">
+                                    연락 가능일
+                                </p>
+                                <input type="date">
+                                <span class="sticker">이후</span>
+                            </li>
+                            <li class="col-group">
+                                <p class="txt">
+                                    레퍼런스 사이트
+                                </p>
+                                <input type="text">
+                            </li>
+                        </ul>
+
+
+                        <div class="btn_wrap">
+                            <button class="prev">이전</button>
+                            <a href="result.html" class="btn">
+                                완료
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </dir>
+
+        </main>
+
+    </div>
+</body>
+
+<script src="jsquery.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+<script>
+    function onClickUpload() {
+        const file_upload_btn = document.getElementById("logo_file");
+        file_upload_btn.click();
+    }
+</script>
+<script>
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            navigation: false,
+
+            afterRender: function() {
+            $('.prev').on('click', function() {
+                $.fn.fullpage.moveSectionUp();
+            });
+            $('.next').on('click', function() {
+                $.fn.fullpage.moveSectionDown();
+            });
+            }
+        });
+    });
+</script>
+
+
+</html>

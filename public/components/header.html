@@ -1,0 +1,83 @@
+<div class="header">
+	<a href="../index.html"><img src="../images/main/logo.svg" alt=""></a>
+	<div class="hd_ri">
+		<ul class="hd_nav">
+			<li><a href="../완료/Planning.html">ABOUT</a></li>
+			<li><a href="../portfolio.html">PORTFOLIO</a></li>
+			<li><a href="../column.html">COLUMN</a></li>
+			<li><a href="../contact.html">CONTACT</a></li>
+		</ul>
+		<button class="menu_btn">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+		</button>
+	</div>
+	<div class="sub_nav_wrap">
+		<div class="flex_wrap">
+			<ul class="big_nav">
+				<li class="now">About</li>
+				<li>Portfolio</li>
+				<li>Column</li>
+				<li>Contact</li>
+			</ul>
+			<div class="small_nav_wrap">
+				<ul class="now">
+					<li><a href="../완료/Planning.html">홈페이지 기획</a></li>
+					<li><a href="../완료/Design.html">홈페이지 디자인</a></li>
+					<li><a href="../front.html">홈페이지 프론트</a></li>
+					<li><a href="../완료/Backend.html">홈페이지 백엔드</a></li>
+				</ul>
+				<ul>
+					<li><a href="../portfolio.html">포트폴리오</a></li>
+				</ul>
+				<ul>
+					<li><a href="../column.html">칼럼</a></li>
+				</ul>
+				<ul>
+					<li><a href="../contact.html">문의하기</a></li>
+					<li><a href="../Survey.html" target="_blank">1분 문답 시작하기</a></li>
+				</ul>
+				<div class="num_wrap">
+					<h3>바로 문의</h3>
+					<p>010-9369-2131</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(".menu_btn").click(function () {
+		$(".header").toggleClass("sub_nav_open");
+		if ($(".header").hasClass("sub_nav_open")) {
+			$("html").addClass("noScroll");
+		}else{
+			$("html").removeClass("noScroll");
+		}
+	})
+
+	var bigNavItems = document.querySelectorAll(".big_nav li"); // big_nav의 li 요소들 선택
+
+	bigNavItems.forEach(function(item, index) {
+		item.addEventListener("click", function() {
+			// 모든 big_nav의 li 요소에서 now 클래스 제거
+			bigNavItems.forEach(function(bigNavItem) {
+				bigNavItem.classList.remove("now");
+			});
+
+			// 클릭된 li에 now 클래스 추가
+			item.classList.add("now");
+
+			// 모든 small_nav_wrap의 ul 요소에서 now 클래스 제거
+			var smallNavItems = document.querySelectorAll(".small_nav_wrap ul");
+			smallNavItems.forEach(function(smallNavItem) {
+				smallNavItem.classList.remove("now");
+			});
+
+			// 클릭된 li에 해당하는 small_nav_wrap의 ul에 now 클래스 추가
+			var smallNavItem = document.querySelector(".small_nav_wrap ul:nth-child(" + (index + 1) + ")");
+			smallNavItem.classList.add("now");
+		});
+	});
+</script>
+
