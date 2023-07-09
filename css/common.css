@@ -1,0 +1,39 @@
+@import url('https://webfontworld.github.io/pretendard/Pretendard.css');
+* { font-family: 'Pretendard', sans-serif; box-sizing:border-box; margin:0; padding:0; }
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, em, img, strong, b, i, dl, dt, dd, ol, ul, li, form, label, legend, caption, article, aside, footer, header, menu, nav, section, video, a {border:0; outline:0; font-size:100%; color:#333; line-height:1;}
+html { width: 100%; scroll-behavior: smooth; overflow-x: hidden;}
+body {line-height:1; width: 100%;-ms-overflow-style: none; height: 100%; }
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;}
+ul, ol, li {list-style:none;}
+strong {display: inline-block;}
+a {margin:0; padding:0; font-size:100%; display: block; text-decoration: none; }
+table {border-collapse:collapse; border-spacing:0; outline:0; font-size:100%; color:#333; line-height:1;}
+tbody, tfoot, thead, tr, th, td { outline:0; font-size:100%; color:#333; line-height:1; }
+input, select {vertical-align:middle;}
+p {line-height:1.5;}
+pre { font-family: 'Pretendard', sans-serif; white-space: pre-line; line-height: 1.5; }
+img {width: 100%;}
+input {outline:0; border: 0; background: none; font-family: 'Pretendard', sans-serif;}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+input[type="file"], input[type="checkbox"] { display: none; }
+label { cursor: pointer; }
+button {cursor:pointer; border: 0; outline: 0; background: none;}
+textarea {resize: none; font-family: 'Pretendard', sans-serif;}
+.col-group {display:flex;}
+.row-group {display:flex; flex-flow: column;}
+.pc { display: inherit; }
+.mb { display: none; }
+/* content 공통 */
+.container { width: 100%; max-width: 1280px; margin: 0 auto; }
+
+@media screen and (max-width:1440px) {
+    .container { padding: 0 24px; }
+}
+
+@media screen and (max-width:1024px) {
+    .pc { display: none; }
+    .mb { display: block; }
+}
+
+
+

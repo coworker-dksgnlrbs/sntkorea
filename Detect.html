@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+
+
+</head>
+<body>
+    <div id="wrap">
+
+        <main id="main" class="main">
+            <div class="main_wrap">
+                <img src="./images/main.png" alt="">
+
+
+				<div class="sub_wrap">
+					<div class="sub_container">
+
+						<div class="Sidebar">
+							<a href="./DASHBOARD.html" class="sub_home_btn">
+								<img src="./images/home_btn.png" alt="">
+							</a>
+							<ul class="Sidebar_nav">
+								<li>
+									<a>
+										<div class="icon_wrap">
+											<img src="./images/icon1.png" alt="">
+										</div>
+										<p>
+											Comprehensive <br>
+											Control
+										</p>
+									</a>
+								</li>
+								<li>
+									<a>
+										<div class="icon_wrap">
+											<img src="./images/icon2.png" alt="">
+										</div>
+										<p>
+											Operation <br>
+											Management
+										</p>
+									</a>
+								</li>
+								<li>
+									<a>
+										<div class="icon_wrap">
+											<img src="./images/icon3.png" alt="">
+										</div>
+										<p>
+											Logs & <br>
+											Reports
+										</p>
+									</a>
+								</li>
+								<li class="active">
+									<a href="">
+										<div class="icon_wrap">
+											<img src="./images/icon4.png" alt="">
+										</div>
+										<p>
+											Cyber resilience <br>
+											of ships
+										</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="sub_right">
+							<ul class="sub_hd">
+								<li><a href="./Identity.html">Identity</a></li>
+								<li><a href="./Protect.html">Protect</a></li>
+								<li class="now"><a href="./Detect.html">Detect</a></li>
+								<li><a>Respond</a></li>
+								<li><a>Recover</a></li>
+							</ul>
+
+							<div class="sub_flex_wrap">
+								<div class="sub_nav">
+									<button data-btn="Network operation monitoring" class="pointer_events_none">
+										<span>1</span>
+										<p>Network operation monitoring</p>
+									</button>
+									<button data-btn="Diagnostic functions of CBS and networks" class="active">
+										<span>2</span>
+										<p>Diagnostic functions of CBS and networks</p>
+									</button>
+								</div>
+
+								<div class="content_box">
+
+									<div data-name="Diagnostic functions of CBS and networks" class="open">
+										<img src="./images/Detect2.png" alt="" class="Diagnostic_open">
+										<div class="Diagnostic_wrap">
+											<img src="" alt="">
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+                
+            </div>
+        </main>
+        <!-- //main -->
+
+        <script src="./js/jquery.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/swiper.min.js"></script>
+
+        <!-- Weak_Score -->
+        <script>
+            $(".Weak_Score_btn").click(function () {
+                $(".Weak_Score_wrap").addClass("open");
+                $(".Weak_Score_wrap").click(function () {
+                    $(".Weak_Score_wrap").removeClass("open");
+                })
+            })
+        </script>
+
+		<script>
+			$(document).ready(function() {
+				$('.sub_nav button').click(function() {
+					var btn = $(this).data('btn');
+					$('.content_box div').removeClass('open');
+					$('.content_box div[data-name="' + btn + '"]').addClass('open');
+					$('.sub_nav button').removeClass('active');
+					$(this).addClass('active');
+				});
+			});
+		</script>
+
+		<!-- <script>
+			$(function () {
+				$(".Diagnostic_open").click(function () {
+					$(".Diagnostic_wrap").addClass("open");
+					$(".Diagnostic_wrap").click(function () {
+						$(".Diagnostic_wrap").removeClass("open");
+					})
+				})
+			})
+		</script> -->
+
+
+		
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+
+
+</head>
+<body>
+    <div id="wrap">
+
+        <main id="main" class="main">
+            <div class="main_wrap">
+                <img src="./images/main.png" alt="">
+
+
+
+                <!-- 홈버튼 -->
+                <a href="./Identity.html" class="home_btn"></a>
+
+                <!-- DASHBOARD 메뉴 -->
+                <div class="DASHBOARD_nav">
+                    <div class="item_wrap">
+                        <div class="item_title">
+                            <img src="./images/icon1.png" alt="">
+                            <p>Comprehensive Control</p>
+                        </div>
+                        <ul>
+                            <li><a>Integrated <br> Dashboard</a></li>
+                            <li><a>Network <br> Diagram</a></li>
+                            <li><a>Equipment <br> Status</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="item_wrap">
+                        <div class="item_title">
+                            <img src="./images/icon2.png" alt="">
+                            <p>Operation Management</p>
+                        </div>
+                        <ul>
+                            <li><a>User Settings</a></li>
+                            <li><a>Backup Settings</a></li>
+                            <li><a>Manual</a></li>
+                            <li><a>Preferences</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="item_wrap">
+                        <div class="item_title">
+                            <img src="./images/icon3.png" alt="">
+                            <p>Logs & Reports</p>
+                        </div>
+                        <ul>
+                            <li><a>Log Status</a></li>
+                            <li><a>Daily Report</a></li>
+                            <li><a>Security <br> Vulnerability</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="item_wrap">
+                        <div class="item_title">
+                            <img src="./images/icon4.png" alt="">
+                            <p>Cyber resilience of ships</p>
+                        </div>
+                        <ul>
+                            <li><a href="./Identity.html">Identity</a></li>
+                            <li><a>Protect</a></li>
+                            <li><a>Detect</a></li>
+                            <li><a>Respond</a></li>
+                            <li><a>Recover</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Weak Score -->
+                <button class="Weak_Score_btn"></button>
+                <div class="Weak_Score_wrap">
+                    <div class="img_wrap">
+                        <img src="./images/Weak_Score.png" alt="">
+                        <button class="Report_open_btn">Report</button>
+                    </div>
+                </div>
+                <div class="Report_wrap">
+                    <img src="./images/Report.png" alt="">
+                </div>
+
+
+
+
+                <!-- 방화벽 -->
+                <button class="firewall_btn"></button>
+                <div class="firewall_wrap">
+                    <img src="./images/firewall.png" alt="">
+                </div>
+
+
+
+
+                <!-- Real-time_notrfication_status -->
+                <div class="Real-time_notrfication_status">
+                    <img src="./images/notrfication_status.png" alt="">
+                </div>
+
+
+
+
+                <!-- 차트 -->
+                <div class="traffic_wrap">
+                    <div class="title_wrap">
+                        <p>Real-time traffic</p>
+                    </div>
+                    <div class="traffic_content">
+                        <div class="canvas_wrap">
+                            <canvas id="myChart" width="441" height="155"></canvas>
+                        </div>
+                        <div class="canvas_wrap">
+                            <canvas id="myChart2" width="441" height="155"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Add firewall policy -->
+                <button class="Add_firewall_policy_btn"></button>
+                <div class="Add_firewall_policy_wrap">
+                    <div class="Add_firewall_policy_box">
+                        <div class="title_wrap">
+                            <p>Blocked Devices</p>
+                        </div>
+                        <ul class="ip_wrap">
+                            <li>
+                                <div>정책명</div>
+                                <div>외부 관리자 접근정책</div>
+                            </li>
+                            <li>
+                                <div>출발지 IP</div>
+                                <div>111.111.111.111</div>
+                                <div>외부_관리자</div>
+                            </li>
+                            <li>
+                                <div>목적지 IP</div>
+                                <div>222.222.222.222</div>
+                                <div>방화벽#1</div>
+                            </li>
+                            <li>
+                                <div>서비스 Port</div>
+                                <div>80, 443</div>
+                                <div>웹서비스</div>
+                            </li>
+                        </ul>
+                        <div class="btn_wrap">
+                            <button class="Additional_btn">추가</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Firewall control -->
+                <button class="Firewall_control_btn"></button>
+                <div class="Firewall_control_wrap">
+                    <div class="Firewall_control_box">
+                        <div class="title_wrap">
+                            <p>Event Status</p>
+                        </div>
+                        <div class="content_wrap">
+                            <div class="Disability_wrap">
+                                <span></span>
+                                <p>1 Disability</p>
+                            </div>
+                            <div class="ip_wrap">
+                                <p>
+                                    PC#3 (192.168.1.110) <br>
+                                    - DDoS attack detection
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Network_wrap -->
+                <div class="Network_wrap">
+                    <div class="title_wrap">
+                        <p>Network Access Control</p>
+                    </div>
+
+
+                    <!-- 신형준 개발자님깨 부탁드린부분 =============================================================================-->
+                    <div class="devices_list">
+                        <button class="devices_item Blocked_devices_btn">
+                            <p>Blocked devices</p>
+                            <span class="num Blocked"></span>
+                        </button>
+                        <div class="devices_list_wrap Blocked_devices_wrap">
+                            <div class="devices_box">
+                                <div class="title_wrap">
+                                    <p>Blocked devices</p>
+
+                                    <button class="btn-close">
+                                        <i class="xi-close"></i>
+                                    </button>
+                                </div>
+                                <div class="table_wrap">
+                                    <table id="blocked-devices-table">
+                                        <tr>
+                                            <th>host</th>
+                                            <th>IP</th>
+                                            <th>Device</th>
+                                            <th>MAC</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="btn_wrap">
+                                    <button>Allow</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <button class="devices_item Allowed_devices_btn">
+                            <p>Allowed devices</p>
+                            <span class="num"></span>
+                        </button>
+                        <div class="devices_list_wrap Allowed_devices_wrap">
+                            <div class="devices_box">
+                                <div class="title_wrap">
+                                    <p>Allowed devices</p>
+
+                                    <button class="btn-close">
+                                        <i class="xi-close"></i>
+                                    </button>
+                                </div>
+                                <div class="table_wrap">
+                                    <table id="allowed-devices-table">
+                                        <tr>
+                                            <th>host</th>
+                                            <th>IP</th>
+                                            <th>Device</th>
+                                            <th>MAC</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        
+                                    </table>
+                                </div>
+                                
+                                <div class="btn_wrap">
+                                    <button>Blocked</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </main>
+        <!-- //main -->
+
+        <script src="./js/jquery.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/swiper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <!-- 신형준 개발자님깨 부탁드린부분 =============================================================================-->
+        <script>
+            let Selected_devices = {
+                blocked: [],
+                allowed: [],
+            };
+
+            let Blocked_devices = 2;
+
+            let Allowed_devices = 30;
+
+            // 디바이스 데모 목록 생성
+            createDevices();
+
+            // 디바이스 개수 표시
+            updateDeviceCount();
+
+            addEvents();
+
+            function createDevices(){
+                let blockedDevicesRow = '';
+                let allowedDevicesRow = '';
+
+                for (let i = 1; i <= Blocked_devices + Allowed_devices; i++) {
+                    if (i <= Blocked_devices) {
+                        blockedDevicesRow += `
+                            <tr class="device device" data-value="${i}">
+                                <td>pc#${i}</td>
+                                <td>120.142.1.119</td>
+                                <td>com</td>
+                                <td>FO:1 E;02:00</td>
+                                <td>
+                                    <input type="checkbox" name="blocked-device" id="blocked-devices${i}" value="${i}">
+                                    <label for="blocked-devices${i}"></label>
+                                </td>
+                            </tr>
+                        `;
+                    }
+
+                    if (i > Blocked_devices) {
+                        allowedDevicesRow += `
+                            <tr class="device device" data-value="${i}">
+                                <td>pc#${i}</td>
+                                <td>120.142.1.119</td>
+                                <td>com</td>
+                                <td>FO:1 E;02:00</td>
+                                <td>
+                                    <input type="checkbox" name="allowed-device" id="allowed-devices${i}" value="${i}">
+                                    <label for="allowed-devices${i}"></label>
+                                </td>
+                            </tr>
+                        `;
+                    }
+                }
+
+                $("#blocked-devices-table tbody").append(blockedDevicesRow);
+                $("#allowed-devices-table tbody").append(allowedDevicesRow);
+            }
+
+            function updateDeviceCount(){
+                // Blocked_devices의 갯수를 span.num에 넣어주기
+                $(".Blocked_devices_btn span.num").text($(".Blocked_devices_wrap .device").length);
+
+                // Allowed_devices의 갯수를 span.num에 넣어주기
+                $(".Allowed_devices_btn span.num").text($(".Allowed_devices_wrap .device").length);
+            }
+
+            function addEvents(){
+                // 통계숫자 클릭 시 팝업창 띄우기
+                $(".main_wrap .Network_wrap .devices_list .devices_item").click(function(){
+                    $(this).next(".devices_list_wrap").addClass("active");
+
+                    // 디바이스 선택 시 선택된 디바이스 목록에 삽입하기
+                    $('input[name="blocked-device"], input[name="allowed-device"]').off("change");
+                    $('input[name="blocked-device"], input[name="allowed-device"]').on("change", function(e){
+                        let targetName = getTargetClass(this);
+
+                        Selected_devices[targetName.items] = Selected_devices[targetName.items].find(item => item == e.target.value)
+                                ? Selected_devices[targetName.items].filter(device => device != e.target.value)
+                                : [...Selected_devices[targetName.items], e.target.value];
+                    });
+                })
+
+                // 팝업창 닫기 버튼 클릭 시 닫기
+                $(".devices_list .btn-close").on("click", (function(){
+                    $(this).parents(".devices_list_wrap").removeClass("active");
+                }));
+
+                // Allow, Blocked 버튼 클릭 시 업데이트하기
+                $(".devices_list_wrap .btn_wrap button").on("click", function(){
+                    let targetName = getTargetClass(this);
+
+                    Selected_devices[targetName.items].map(item => {
+                        $(`.device[data-value=${item}] input`).prop("checked", false);
+                        $(`.device[data-value=${item}]`).appendTo(targetName.moveTarget + " tbody");
+                    });
+
+                    Selected_devices[targetName.items] = [];
+
+                    sort(targetName.moveTarget);
+
+                    updateDeviceCount();
+                });
+            }
+
+            function sort(target = ""){
+                let listItems = $(target + ' .device').get();
+
+                // 클래스명을 기준으로 요소들을 재정렬
+                listItems.sort((a, b) => $(a).attr("data-value") - $(b).attr("data-value"));
+
+                // 재정렬된 요소들을 부모 요소에 다시 추가
+                let parentList = $(target + ' tbody');
+
+                parentList.find(".device").remove();
+
+                $.each(listItems, function(index, item) {
+                    parentList.append(item);
+                });
+            }
+
+            function getTargetClass(target){
+                return {
+                    items : $(target).parents(".devices_list_wrap").hasClass("Blocked_devices_wrap") ? 'blocked' : 'allowed',
+                    originTarget:  $(target).parents(".devices_list_wrap").hasClass("Blocked_devices_wrap") ? '.Blocked_devices_wrap' : '.Allowed_devices_wrap',
+                    moveTarget : $(target).parents(".devices_list_wrap").hasClass("Blocked_devices_wrap") ? '.Allowed_devices_wrap' : '.Blocked_devices_wrap',
+                };
+            }
+        </script>
+        <!-- 신형준 개발자님깨 부탁드린부분 =============================================================================-->
+
+        <!-- 차트1 -->
+        <script>
+            // 차트 데이터
+            var data = {
+                labels: ['18:15', '18:25', '18:35', '18:45', '18:55'],
+                datasets: [{
+                    label: 'Traffic IN',
+                    data: [80, 35, 40, 10, 45],
+                    backgroundColor: '#2a4152', // 막대 그래프의 색상
+                    borderColor: '#fff', // 막대 그래프의 테두리 색상
+                    borderWidth: 1, // 막대 그래프의 테두리 두께
+                    fill: true // 막대 그래프 채우기
+                }]
+            };
+    
+            // 차트 옵션
+            var options = {
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: '#fff' // 텍스트 색상 변경
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100 // y 좌표 최대치 설정
+                    }
+                }
+            };
+    
+            // 차트 생성
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'line', // 막대 그래프
+                data: data,
+                options: options
+            });
+        </script>
+        <!-- 차트2 -->
+        <script>
+            // 차트 데이터
+            var data = {
+                labels: ['18:15', '18:25', '18:35', '18:45', '18:55'],
+                datasets: [{
+                    label: 'Traffic OUT',
+                    data: [21, 32, 50, 20, 32],
+                    backgroundColor: '#499692', // 막대 그래프의 색상
+                    borderColor: '#fff', // 막대 그래프의 테두리 색상
+                    borderWidth: 1, // 막대 그래프의 테두리 두께
+                    fill: true // 막대 그래프 채우기
+                }]
+            };
+
+            // 차트 옵션
+            var options = {
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: '#fff' // 텍스트 색상 변경
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100 // y 좌표 최대치 설정
+                    }
+                }
+            };
+
+            // 차트 생성
+            var ctx = document.getElementById('myChart2').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'line', // 막대 그래프
+                data: data,
+                options: options
+            });
+        </script>
+
+        <!-- Weak_Score -->
+        <script>
+            $(".Weak_Score_btn").click(function () {
+                $(".Weak_Score_wrap").addClass("open");
+                $(".Weak_Score_wrap").click(function () {
+                    $(".Weak_Score_wrap").removeClass("open");
+                })
+            })
+        </script>
+
+        <!-- Report -->
+        <script>
+            $(".Report_open_btn").click(function () {
+                $(".Report_wrap").addClass("open");
+                $(".Report_wrap").click(function () {
+                    $(".Report_wrap").removeClass("open");
+                })
+            })
+        </script>
+
+
+        <!-- Firewall_control -->
+        <script>
+            $(".Firewall_control_btn").click(function () {
+                $(".Firewall_control_wrap").addClass("open");
+                $(".Firewall_control_wrap").click(function () {
+                    $(".Firewall_control_wrap").removeClass("open");
+                })
+            })
+        </script>
+
+        <!-- Add firewall policy -->
+        <script>
+            $(".Add_firewall_policy_btn").click(function () {
+                $(".Add_firewall_policy_wrap").addClass("open");
+                $(".Additional_btn").click(function () {
+                    $(".Add_firewall_policy_wrap").removeClass("open");
+                })
+            })
+        </script>
+
+
+
+
+        <!-- 방화벽 -->
+        <script>
+            $(".firewall_btn").click(function () {
+                $(".firewall_wrap").addClass("open");
+                $(".firewall_wrap").click(function () {
+                    $(".firewall_wrap").removeClass("open");
+                })
+            })
+        </script>
+
+
+        
+
+
+
+
+
+
+    </div>
+</body>
+</html>
