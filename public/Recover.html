@@ -79,52 +79,38 @@
 						<div class="sub_right">
 							<ul class="sub_hd">
 								<li><a href="./Identity.html">Identity</a></li>
-								<li class="now"><a href="./Protect.html">Protect</a></li>
+								<li><a href="./Protect.html">Protect</a></li>
 								<li><a href="./Detect.html">Detect</a></li>
 								<li><a href="./Respond.html">Respond</a></li>
-								<li><a href="./Recover.html">Recover</a></li>
+								<li class="now"><a href="./Recover.html">Recover</a></li>
 							</ul>
 
 							<div class="sub_flex_wrap">
 								<div class="sub_nav">
-									<button data-btn="Security Zones">
+									<button data-btn="Incident response plan" class="pointer_events_none">
 										<span>1</span>
-										<p>Security Zones</p>
+										<p>Incident response plan</p>
 									</button>
-									<button data-btn="Network Protection safeguards" class="pointer_events_none">
+									<button data-btn="Local, independent and/or manual operation" class="active">
 										<span>2</span>
-										<p>Network Protection safeguards</p>
+										<p>Local, independent and/or manual operation</p>
 									</button>
-									<button data-btn="Antivirus, antimalware, antispam and other protections from malicious code">
+									<button data-btn="Network isolation" class="pointer_events_none">
 										<span>3</span>
-										<p>Antivirus, antimalware, antispam and other protections from malicious code</p>
+										<p>Network isolation</p>
 									</button>
-									<button data-btn="Access control" class="active">
+									<button data-btn="Fallback to a minimal risk condition" class="pointer_events_none">
 										<span>4</span>
-										<p>Access control</p>
-									</button>
-									<button data-btn="Wireless communication" class="pointer_events_none">
-										<span>5</span>
-										<p>Wireless communication</p>
-									</button>
-									<button data-btn="Remote access control and communication with untrusted networks" class="pointer_events_none">
-										<span>6</span>
-										<p>Remote access control and communication with untrusted networks</p>
-									</button>
-									<button data-btn="Use of Mobile and Portable Devices" class="pointer_events_none">
-										<span>7</span>
-										<p>Use of Mobile and Portable Devices</p>
+										<p>Fallback to a minimal risk condition</p>
 									</button>
 								</div>
 
 								<div class="content_box">
 
-									<div data-name="Access control" class="open">
-										<img src="./images/Protect4.png" alt="">
+									<div data-name="Local, independent and/or manual operation" class="open">
+										<img src="./images/independent.png" alt="">
 									</div>
 
-
-									<div data-name="Software"></div>
 								</div>
 							</div>
 						</div>
@@ -163,6 +149,19 @@
 				});
 			});
 		</script>
+
+		<!-- <script>
+			$(function () {
+				$(".Incident_response_plan_open").click(function () {
+					$(".Incident_response_plan_wrap").addClass("open");
+					$(".Incident_response_plan_wrap").click(function () {
+						$(".Incident_response_plan_wrap").removeClass("open");
+					})
+				})
+			})
+		</script> -->
+
+		
 
     </div>
 </body>

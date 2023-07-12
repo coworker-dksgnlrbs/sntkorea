@@ -158,7 +158,7 @@
 .sub_wrap .sub_flex_wrap .sub_nav button.active { background-color: #141432; }
 .sub_wrap .sub_flex_wrap .sub_nav button.pointer_events_none { pointer-events: none; }
 .sub_wrap .sub_flex_wrap .sub_nav button span { display: flex; justify-content: center; align-items: center; border-radius: 100%; background-color: #d09630; width: 34px; height: 34px; color: #fff; }
-.sub_wrap .sub_flex_wrap .sub_nav button p { padding-left: 12px; color: #fff; font-size: 22px; width: calc(100% - 34px); }
+.sub_wrap .sub_flex_wrap .sub_nav button p { padding-left: 12px; color: #fff; font-size: 22px; width: calc(100% - 34px); text-align: left; }
 .sub_wrap .sub_flex_wrap .sub_nav button:nth-child(1) span { background-color: #57c3bb; }
 .sub_wrap .sub_flex_wrap .sub_nav button:nth-child(2) span { background-color: #91b848; }
 .sub_wrap .sub_flex_wrap .sub_nav button:nth-child(3) span { background-color: #d25961; }
@@ -187,7 +187,10 @@
 .sub_wrap .Diagnostic_wrap.open { display: flex; }
 
 
+/* Respond1 */
+.sub_wrap .Incident_response_plan_open { cursor: pointer; }
+.sub_wrap .Incident_response_plan_wrap { position: fixed; left: 0; top: 0; width: 1920px; height: 1080px; display: none; justify-content: center; align-items: center; cursor: pointer; }
+.sub_wrap .Incident_response_plan_wrap.open { display: flex; align-items: center; justify-content: center; }
 
-
-
+.sub_wrap .Incident_response_plan_wrap img { width: 700px; }
 
